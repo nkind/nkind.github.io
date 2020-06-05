@@ -1,0 +1,368 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #40514E;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    color: #66BFBF;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    text-align: center;
+}
+
+h2 {
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h5 {
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+}
+
+h6 {
+    color: #66BFBF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-style: italic;
+}
+
+p {
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    margin: 100px auto;
+    width: 4%;
+}
+
+.top-container {
+    background-color: #EAF6F6;
+    position: relative;
+    padding-top: 100px;    
+}
+
+
+.top-cloud {
+    position: absolute;
+    right: 300px;
+    top: 40px;
+}
+
+.profile-container {
+    margin: 100px 0;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 250px;
+    bottom: 300px;
+}
+
+.skill-desc {
+    margin: 10px 0;
+    text-align: left;
+}
+
+.card-deck {
+    margin-bottom: 20px;
+}
+
+.table-scroll {
+    display: inline-block;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #66BFBF;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* The sidebar menu */
+.sidebar {
+  height: 100%; 
+  width: 0; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0;
+  left: 0;
+  background-color: #111; 
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+}
+  
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+    
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+  
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+  
+  /* The button used to open the sidebar */
+.openbtn {
+  position: fixed;
+  top: 0;
+  left: 0;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  border: none;
+}
+  
+.openbtn:hover {
+  background-color: #444;
+}
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+.education-exp {
+  box-sizing: border-box;
+  background-color: #EAF6F6;
+}
+  
+  /* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+  
+  /* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #444;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+  
+  /* Container around content */
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+  
+  /* The circles on the timeline */
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #66BFBF;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+  
+  /* Place the container to the left */
+.left-timeline {
+  left: 0;
+}
+  
+  /* Place the container to the right */
+.right-timeline {
+  left: 50%;
+}
+  
+  /* Add arrows to the left container (pointing right) */
+.left-timeline::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+  
+  /* Add arrows to the right container (pointing left) */
+.right-timeline::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+  
+  /* Fix the circle for containers on the right side */
+.right-timeline::after {
+  left: -13px;
+}
+
+.left-timeline::after {
+  right: -13px;
+}
+  
+  /* The actual content */
+.timeline-content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+  
+.copyright {
+  font-size: 0.75rem;
+}
+
+footer {
+  background-color: #EAF6F6;
+
+}
+
+
+
+.portfolio-container {
+  background-color: #EAF6F6;
+}
+
+
+/* Portfolio styling */
+
+.left-portfolio {
+  background-color: #EAF6F6;
+}
+
+.right-portfolio {
+  background-color: #888;
+}
+
+.project-info {
+  background-color: #66BFBF;
+}
+
+
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { 
+  overflow: hidden; 
+}
+
+@media screen and (max-width: 600px) {
+
+  .social {
+    display: none;
+  }
+    
+  .bottom-cloud {
+    display: none;
+  }
+
+  .timeline::after {
+    left: 31px;
+  }
+  
+  .timeline-container {
+    width: 100%;
+  }
+  
+  .timeline-container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  .left-timeline::after, .right-timeline::after {
+    left: 15px;
+  }
+  
+  .right-timeline {
+    left: 0%;
+  }
+}
+  
+@media screen and (max-height: 450px) {
+
+  .sidebar { 
+    padding-top: 15px;
+  }
+  .sidebar a { 
+    font-size: 18px;
+  }
+}
