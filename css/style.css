@@ -95,10 +95,6 @@ hr {
     text-align: left;
 }
 
-.card-deck {
-    margin-bottom: 20px;
-}
-
 .table-scroll {
     display: inline-block;
     overflow-y: scroll;
@@ -281,6 +277,7 @@ hr {
   position: relative;
   border-radius: 6px;
 }
+
   
 .copyright {
   font-size: 0.75rem;
