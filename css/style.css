@@ -215,7 +215,7 @@ hr {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  right: -15px;
   background-color: white;
   border: 4px solid #66BFBF;
   top: 15px;
@@ -326,7 +326,8 @@ footer {
   .social {
     display: none;
   }
-    
+
+   
   .bottom-cloud {
     display: none;
   }
