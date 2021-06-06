@@ -4,7 +4,7 @@ html {
 
 body {
   color: #40514e;
-  font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
   text-align: center;
 }
 
@@ -14,7 +14,7 @@ header {
 
 h1 {
   color: #66bfbf;
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: 5.625rem;
   margin: 50px auto 0 auto;
   text-align: center;
@@ -22,7 +22,7 @@ h1 {
 
 h2 {
   color: #66bfbf;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: normal;
   padding-bottom: 10px;
@@ -30,13 +30,13 @@ h2 {
 
 h3 {
   color: #66bfbf;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   padding-bottom: 10px;
 }
 
 h4 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.1rem;
   font-weight: normal;
   padding-bottom: 10px;
@@ -44,13 +44,13 @@ h4 {
 
 h5 {
   color: #66bfbf;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
 }
 
 h6 {
   color: #66bfbf;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: normal;
   font-style: italic;
 }
@@ -71,8 +71,7 @@ hr {
 }
 
 .top-container {
-  position: relative;
-  padding-top: 100px;
+  height: 100vh;
 }
 
 .top-cloud {
@@ -83,6 +82,17 @@ hr {
 
 .profile-container {
   margin: 100px 0;
+}
+
+.intro {
+  padding-top: 14rem;
+}
+
+.mtn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .bottom-cloud {
@@ -193,7 +203,7 @@ hr {
 }
 
 .timeline::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: #444;
@@ -211,7 +221,7 @@ hr {
 }
 
 .timeline-container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -232,7 +242,7 @@ hr {
 }
 
 .left-timeline::before {
-  content: ' ';
+  content: " ";
   height: 0;
   position: absolute;
   top: 22px;
@@ -245,7 +255,7 @@ hr {
 }
 
 .right-timeline::before {
-  content: ' ';
+  content: " ";
   height: 0;
   position: absolute;
   top: 22px;
@@ -310,6 +320,10 @@ hr {
     -ms-flex: 1;
     flex: 1;
   }
+
+  .intro {
+    padding-top: 25rem;
+  }
 }
 
 .overflow-hidden {
@@ -321,8 +335,16 @@ hr {
     display: none;
   }
 
+  .top-cloud {
+    display: none;
+  }
+
   .bottom-cloud {
     display: none;
+  }
+
+  .intro {
+    padding-top: 2rem;
   }
 
   .timeline::after {
