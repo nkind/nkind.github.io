@@ -320,14 +320,16 @@ hr {
     -ms-flex: 1;
     flex: 1;
   }
-
-  .intro {
-    padding-top: 25rem;
-  }
 }
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    padding-top: 25rem;
+  }
 }
 
 @media screen and (max-width: 600px) {
